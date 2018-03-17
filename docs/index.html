@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="es">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Taller de OpenProdoc</title>
+
+		<meta name="description" content="Taller de OpenProdoc: Gestiona tu documentación con software libre">
+		<meta name="author" content="Guillermo Castellano">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1><b>Taller de <span style="color:#00008B">OpenProdoc</span></b></h1>
+					<h4>Gestiona tu documentación con software libre</h4>
+					<p>
+						<small>Guillermo Castellano | <a href="http://twitter.com/guillearch">@guillearch</a></small>
+						<br><small>Open Source Weekends (Madrid, marzo 2018)</small>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2><span style="color:#00008B"><b>Introducción</b></span></h2>
+					</section>
+					<section>
+						<h2>¿Qué haremos?</h2>
+						<p class="fragment">Aprender qué es un gestor documental</p>
+						<p class="fragment">Instalar OpenProdoc portable</p>
+						<p class="fragment">Tareas básicas</p>
+						<p class="fragment">Administración</p>
+						<p class="fragment">Posibilidades avanzadas</p>
+					</section>
+					<section>
+						<h2>¿Cómo lo haremos?</h2>
+						<p class="fragment">Introducción a la gestión documental <span style="color:#8c8c8c">(10 minutos)</span></p>
+						<p class="fragment">Arrancar OpenProdoc 2.1 portable en un equipo con Java 6+ y Firefox <span style="color:#8c8c8c">(5 minutos)</span></p>
+						<p class="fragment">Ayudar a un estudio de diseño a gestionar su documentación con OpenProdoc <span style="color:#8c8c8c">(30 minutos)</span></p>
+					</section>
+					<section data-background="img/rm-is-coming.png"></section>
+				</section>
+
+				<section>
+					<section>
+						<h2><span style="color:#00008B"><b>¿Quién necesita gestión documental?</b></span></h2>
+					</section>
+					<section>
+						<img src="img/forges.gif">
+					</section>
+					<section>
+						<img src="img/designer-life.png">
+					</section>
+					<section>
+						<img src="img/phd-comics.png" style="width:150%">
+					</section>
+					<section>
+						<img src="img/dilbert.jpg" style="width:150%">
+					</section>
+					<section>
+						<h2>¿Te resulta familiar alguna de estas situaciones?</h2>
+						<p>
+							<span style="color:#00008B" class="fragment"><b>Todos</b></span><span class="fragment"> necesitamos gestión documental.</span>
+						</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2><span style="color:#00008B"><b>¿Qué es la gestión documental?</b></span></h2>
+					</section>
+					<section data-background="img/sakurako.gif"></section>
+					<section>
+						<h2>¿Qué es un documento?</h2>
+						<p>
+							<span class="fragment">Un documento es la <span style="color:#00008B"><b>evidencia</b></span> de la actuación, única o secuencial, de una organización o persona.</span>
+						</p>
+					</section>
+					<section>
+						<h2>Evidencia de la actuación...</h2>
+						<p class="fragment">Valor jurídico</p>
+						<p class="fragment">Valor histórico</p>
+						<p class="fragment">Variedad de formatos</p>
+						<p class="fragment">Contexto</p>
+						<p class="fragment">Acceso a la información</p>
+					</section>
+					<section>
+						<h2>... única o secuencial...</h2>
+						<p class="fragment">Unidades documentales simples</p>
+						<p class="fragment">Unidades documentales compuestas</p>
+					</section>
+					<section>
+						<h2>... de una organización o persona.</h2>
+						<p class="fragment">Normas adicionales</p>
+						<p class="fragment">Seguridad</p>
+						<p class="fragment">Concurrencia</p>
+					</section>
+					<section>
+						<h2>¿Para qué sirve un gestor documental?</h2>
+						<p>
+							<span class="fragment">Garantizar la <span style="color:#00008B"><b>autenticidad</b></span>, <span style="color:#00008B"><b>fiabilidad</b></span>, <span style="color:#00008B"><b>integridad</b></span> y <span style="color:#00008B"><b>usabilidad</b></span> de los documentos electrónicos durante todo su ciclo vital.</span>
+						</p>
+					</section>
+					<section>
+						<h2>Ventajas de la gestión documental</h2>
+						<p class="fragment">Reducción de riesgos</p>
+						<p class="fragment">Ahorro económico</p>
+						<p class="fragment">Reutilización de la información</p>
+						<p class="fragment">Transparencia</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2><span style="color:#00008B"><b>Características de un gestor documental</b></span></h2>
+					</section>
+					<section>
+						<img src="img/commistrip.jpg" style="width:70%">
+					</section>
+					<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+						<h2>¿Qué hace?</h2>
+						<p class="fragment">Clasificación de los documentos</p>
+						<p class="fragment">Búsquedas por texto libre y lenguaje controlado</p>
+						<p class="fragment">Control de versiones</p>
+						<p class="fragment">Bloqueo de documentos (check in y check out)</p>
+						<p class="fragment">Gestión de metadatos</p>
+						<p class="fragment">Automatización de tareas</p>
+						<p class="fragment">Acceso controlado a la documentación</p>
+					</section>
+					<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+						<h2>¿Qué no hace?</h2>
+						<p class="fragment">Sistema de gestión documental</br></p>
+						<p class="fragment">Software de gestión integral</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2><span style="color:#00008B"><b>Gestiona tu documentación con software libre</b></span></h2>
+					</section>
+					<section>
+						<h2>Soluciones de gestión documental open source</h2>
+						<p class="fragment"><a href="https://www.alfresco.com/">Alfresco</a></p>
+						<p class="fragment"><a href="https://www.nuxeo.com/">Nuxeo</a></p>
+						<p class="fragment"><a href="https://www.openkm.com/">OpenKM</a></p>
+						<p class="fragment"><a href="http://openprodoc.com/">OpenProdoc</a></p>
+						<p class="fragment"><a href="https://www.seeddms.org/index.php?id=2">SeedDMS</a></p>
+					</section>
+					<section>
+						<h2>Características técnicas de OpenProdoc</h2>
+						<p class="fragment">Herencia y polimorfismo</p>
+						<p class="fragment">API con todas las funcionalidades</p>
+						<p class="fragment">Modelo de conectores</p>
+						<p class="fragment">Multiplataforma</p>
+						<p class="fragment">Seguridad</p>
+						<p class="fragment">Aplicación J2EE y portable</p>
+					</section>
+					<section>
+						<h2>Y es 100% open source</h2>
+						<p class="fragment">Todo el código está publicado en <a href="https://github.com/JHierrot/openprodoc">GitHub</a></p>
+						<p class="fragment">Licencia AGPLv3</p>
+						<p class="fragment"><a href="http://jhierrot.github.io/openprodoc/help/ES/HelpIndex.html">Documentación de ayuda</a></p>
+					</section>
+				</section>
+
+
+
+								<section style>
+									<pre><code class="hljs" data-trim contenteditable>
+public class MuchasGracias {
+	public static void main(String[] args) {
+		System.out.printl("¡Muchas gracias!");
+	}
+}
+									</code></pre>
+								</section>
+
+							</div>
+
+						</div>
+
+						<script src="lib/js/head.min.js"></script>
+						<script src="js/reveal.js"></script>
+
+						<script>
+
+							// More info https://github.com/hakimel/reveal.js#configuration
+							Reveal.initialize({
+								controls: true,
+								progress: true,
+								history: true,
+								center: true,
+
+								transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+								// More info https://github.com/hakimel/reveal.js#dependencies
+								dependencies: [
+									{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+									{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+									{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+									{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+									{ src: 'plugin/zoom-js/zoom.js', async: true },
+									{ src: 'plugin/notes/notes.js', async: true }
+								]
+							});
+
+						</script>
+					</body>
+				</html>
